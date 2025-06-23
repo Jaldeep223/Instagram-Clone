@@ -1,0 +1,57 @@
+.post-card {
+  //border: 1px solid #ccc;
+  padding: 1rem;
+  max-width: 500px;
+  margin: 1rem auto;
+  font-family: Arial, sans-serif;
+
+   .post-image, .avatar {
+    cursor: pointer;
+  }
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.likes-comments {
+  display: flex;
+  justify-content:flex-start; /* centers horizontally */
+  gap: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.likes, .comments-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.caption {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.comments {
+  font-size: 0.9rem;
+  color: #555;
+}

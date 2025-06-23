@@ -1,0 +1,90 @@
+.status-bar-wrapper {
+  position: relative;
+  width: 620px;     
+  margin: 0 auto;        
+  display: flex;
+  align-items: center;   
+  padding: 10px 0;
+  //box-sizing: border-box;
+  // background-color: #fff;
+}
+
+.status-bar {
+  display: flex;
+  gap: 15px;
+  overflow-x: hidden;    
+  flex-grow: 1;
+  scroll-behavior: smooth;
+}
+
+.status {
+  flex: 0 0 auto;
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #c13584;  // Instagram story ring color
+    padding: 2px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+
+  }
+
+  p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #333;
+    white-space: nowrap;
+  }
+}
+
+.scroll-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  line-height: 26px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #eee;
+  }
+
+  &.left {
+    left: -40px;      // position left arrow just outside the wrapper
+  }
+
+  &.right {
+    right: -40px;     // position right arrow just outside the wrapper
+  }
+}
+
+@media (max-width: 600px) {
+  .status-bar-wrapper {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .scroll-btn.left {
+    left: 10px;
+  }
+
+  .scroll-btn.right {
+    right: 10px;
+  }
+}
