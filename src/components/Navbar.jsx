@@ -16,6 +16,7 @@ const navItems = [
   { name: 'More', path: '/more', iconClass: 'fa-solid fa-bars' },
 ];
 
+
 const Navbar = () => (
   <nav className="navbar">
     <h2 className="logo">Instagram</h2>
@@ -31,4 +32,3 @@ const Navbar = () => (
 );
 
 export default Navbar;
-

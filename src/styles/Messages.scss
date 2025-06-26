@@ -1,0 +1,139 @@
+.messages-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.message-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .message-list-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    .list-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .list-text {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.conversation-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  min-height: 150px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .conversation-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    &.sent {
+      flex-direction: row-reverse;
+
+      .message-avatar {
+        order: 2;
+      }
+
+      .message-content {
+        background-color: #d4edda;
+        color: #155724;
+        border-radius: 8px 0 8px 8px;
+      }
+    }
+
+    &.received {
+      .message-content {
+        background-color: #d1ecf1;
+        color: #0c5460;
+        border-radius: 0 8px 8px 8px;
+      }
+    }
+
+    .message-avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .message-content {
+      padding: 8px 12px;
+      max-width: 80%;
+      font-size: 14px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.send-message-area {
+  display: flex;
+  gap: 10px;
+
+  .message-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .send-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

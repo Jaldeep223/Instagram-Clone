@@ -1,20 +1,25 @@
 .status-bar-wrapper {
   position: relative;
-  width: 620px;     
-  margin: 0 auto;        
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;   
+  align-items: center;
   padding: 10px 0;
-  //box-sizing: border-box;
-  // background-color: #fff;
+  overflow: hidden;
 }
 
 .status-bar {
   display: flex;
-  gap: 15px;
-  overflow-x: hidden;    
-  flex-grow: 1;
+  gap: 12px;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 10px;
+}
+
+.status-bar::-webkit-scrollbar {
+  display: none; // Hide scroll bar for cleaner UI
 }
 
 .status {
@@ -23,15 +28,17 @@
   cursor: pointer;
 
   img {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    border: 3px solid #c13584;  // Instagram story ring color
+    border: 3px solid #c13584;
     padding: 2px;
     object-fit: cover;
     transition: transform 0.3s ease;
 
-
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   p {
@@ -48,8 +55,7 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 20px;
   cursor: pointer;
   user-select: none;
   display: flex;
@@ -60,31 +66,56 @@
   transform: translateY(-50%);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease;
+  z-index: 10;
 
   &:hover {
     background-color: #eee;
   }
 
   &.left {
-    left: -40px;      // position left arrow just outside the wrapper
+    left: -35px;
   }
 
   &.right {
-    right: -40px;     // position right arrow just outside the wrapper
+    right: -35px;
   }
 }
 
-@media (max-width: 600px) {
-  .status-bar-wrapper {
-    width: 100%;
-    padding: 10px 20px;
+/* Tablet */
+@media (max-width: 768px) {
+  .status img {
+    width: 60px;
+    height: 60px;
   }
 
-  .scroll-btn.left {
-    left: 10px;
-  }
-
+  .scroll-btn.left,
   .scroll-btn.right {
-    right: 10px;
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .status-bar-wrapper {
+    padding: 10px 5px;
+  }
+
+  .status-bar {
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .status img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .status p {
+    font-size: 10px;
+  }
+
+  .scroll-btn.left,
+  .scroll-btn.right {
+    display: none;
   }
 }

@@ -1,32 +1,3 @@
-// .profile-page {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 30px;
-
-//   h2 {
-//     margin-bottom: 20px;
-//   }
-
-//   img {
-//     width: 150px;
-//     height: 150px;
-//     border-radius: 50%;
-//     cursor: pointer; // makes the image pointer on hover
-//     object-fit: cover;
-//     margin-bottom: 20px;
-//   }
-
-//   p {
-//     font-size: 16px;
-//     color: #555;
-//     text-align: center;
-//     max-width: 400px;
-//   }
-// }
-
-
-// src/styles/ProfileSummary.scss
 
 .profile-summary {
   max-width: 400px;
@@ -34,6 +5,7 @@
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
+  height: 100vh;
 
   h2 {
     font-size: 2rem;

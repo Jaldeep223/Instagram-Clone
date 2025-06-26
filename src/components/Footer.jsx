@@ -3,6 +3,7 @@ import '../styles/Footer.scss';
 
 const Footer = () => {
   return (
+ <div className="page-wrapper">
     <footer className="footer">
       <nav className="footer-links">
         <a href="#">Meta</a>
@@ -25,6 +26,7 @@ const Footer = () => {
         © 2025 Instagram from Meta
       </div>
     </footer>
+  </div> 
   );
 };
 

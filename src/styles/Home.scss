@@ -1,8 +1,74 @@
 
 
-.home-page {
-  background: #fafafa;
-  min-height: 100vh;
-  padding-top: 60px; // if you have a fixed navbar
+.navbar {
+  /* ...existing styles... */
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2rem;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      padding: 0.5rem 0.4rem;
+      border-radius: 8px;
+      color: #333;
+      text-decoration: none;
+      transition: background 0.2s;
+
+      .icon {
+        font-size: 1.5rem;
+      }
+
+      .label {
+        display: inline;  /* default show label */
+      }
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+
+  /* Hide labels & make horizontal from 375px up to 1279px */
+  @media (min-width: 375px) and (max-width: 1279px) {
+    .nav-links {
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+
+      .nav-item {
+        flex-direction: column;
+        padding: 0.25rem;
+        font-size: 0.9rem;
+
+        .label {
+          display: none;  /* hide text label */
+        }
+      }
+    }
+  }
+
+  /* From 1280px and up, show labels and vertical */
+  @media (min-width: 1280px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 1.2rem;
+
+      .nav-item {
+        flex-direction: row;
+        padding: 0.5rem 0.4rem;
+
+        .label {
+          display: inline;  /* show text label */
+        }
+      }
+    }
+  }
 }
+
 

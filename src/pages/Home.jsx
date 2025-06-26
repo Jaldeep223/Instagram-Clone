@@ -1,4 +1,4 @@
-import React from 'react';
+import  { React,useEffect }from 'react';
 import PostCard from '../components/PostCard';
 import '../styles/Home.scss';
 
@@ -21,7 +21,7 @@ const mockPosts = [
     userAvatar: 'https://randomuser.me/api/portraits/women/2.jpg',
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97',
     likes: 21,
-    caption: 'Sunset at the beach',
+    caption: 'Chilling in the city',
     comments: [{ user: 'john_doe', text: 'So beautiful!' }],
   },
   {
@@ -50,7 +50,7 @@ const mockPosts = [
     userAvatar: 'https://randomuser.me/api/portraits/women/5.jpg',
     image: 'https://images.unsplash.com/photo-1500534623283-312aade485b7',
     likes: 40,
-    caption: 'Chilling in the city',
+    caption: 'Sunset at the beach',
     comments: [
       { user: 'mark_twain', text: 'Cool!' },
       { user: 'jane_smith', text: 'Nice view!' },
@@ -110,7 +110,12 @@ const mockPosts = [
 
 
 
+
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home-page">
       {mockPosts.map(post => (
@@ -121,5 +126,4 @@ const Home = () => {
 };
 
 export default Home;
-
 
