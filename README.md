@@ -1,12 +1,30 @@
-# React + Vite
+# 📸 Instagram Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern **Instagram Clone** built using **React.js** and **Sass**. This project replicates key UI elements and basic functionalities of the Instagram web app such as post feed, likes, and comments.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [https://Jaldeep223.github.io/Instagram-Clone](https://Jaldeep223.github.io/Instagram-Clone)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- ⚛️ React.js (Functional Components & Hooks)
+- 🎨 Sass (SCSS) for modular styling
+- 📦 gh-pages (for deployment)
+
+---
+
+## 📷 Features
+
+- 🖼️ Display static post feed (images + captions)
+- ❤️ Like and comment interface (static/dummy)
+- 🔄 Component-based architecture
+- 📱 Fully responsive design (mobile-first)
+- ✨ Clean and modular SCSS structure
+
+---
+
+## 📁 Project Structure
+
