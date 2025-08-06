@@ -1,12 +1,49 @@
-# React + Vite
+# 📸 Instagram Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **Instagram Clone** built using **React.js** and styled with **Sass (SCSS)**. It replicates the UI and basic interactions of Instagram with clean code structure, modular components, and a focus on responsive design.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Click here to view the live project](https://Jaldeep223.github.io/Instagram-Clone)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React.js** – Frontend framework
+- **Sass (SCSS)** – CSS preprocessor for modular styling
+- **React Router DOM** – For navigating between pages
+
+---
+
+## ✨ Features
+
+- 🖼️ Instagram-style feed layout
+- ❤️ Like, comment UI components
+- 👤 Profile page
+- 📱 Fully responsive design (Mobile, Tablet, Desktop)
+- 📷 Stories layout (optional)
+- 🔍 Explore/search page (optional)
+- 🔄 Dynamic content rendered from data folder
+
+---
+
+## 📂 Folder Structure
+
+```bash
+instagram-clone/
+├── public/
+│
+├── src/
+│   ├── assets/           
+│   ├── components/       # Reusable components (Navbar,Footer, Postcard)
+│   ├── data/             # Mock data (stories)
+│   ├── pages/            # Page-level components (Home, Profile, Notification, message, etc.)
+│   ├── styles/           # Sass/SCSS styling files
+│   ├── App.jsx           # Main app component
+│   ├── main.jsx          # Entry point
+│   └── index.scss        # Global styles
+│
+├── .gitignore
+├── package.json
+└── README.md
